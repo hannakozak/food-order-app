@@ -1,10 +1,19 @@
 import React from 'react';
 
+import MenuList from './components/Menu/MenuList/MenuList';
+import Header from './components/Layout/Header';
+
+import { ThemeProvider } from "styled-components";
+import { theme } from './styles/Theme';
+import { GlobalStyle } from './styles/globalStyles';
+
 const App = () => {
   return (
-    <>
-      <h1>Smoothies</h1>
-    </>
+    <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Header />
+        <MenuList />
+    </ThemeProvider>
   )
 }
 
