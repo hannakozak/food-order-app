@@ -4,7 +4,7 @@ export const ItemWrapper = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   margin: 1rem;
   width: 75%;
   line-height: 50px;
@@ -18,6 +18,7 @@ export const ItemWrapper = styled.li`
   }
 `;
 
+
 export const ItemName = styled.h3`
   font-size: 2rem;
 `;
@@ -26,4 +27,10 @@ export const ItemPrice = styled.div`
   font-weight: bold;
   color: ${({ theme }) => theme.colors.darkOrange};
   font-size: 1.5rem;
+`;
+
+export const ItemPhoto = styled.img`
+  width: 75%;
+  border-radius: 5%;
+  object-fit: cover;
 `;
