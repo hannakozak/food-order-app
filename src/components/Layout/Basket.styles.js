@@ -14,6 +14,6 @@ export const BusketWrapper = styled.button`
 `;
 
 export const BusketItems = styled.span`
-    color: ${({ theme }) => theme.colors.darkOrange};
+    color: ${({ theme }) => theme.colors.lightOrange};
     font-size: 2.5rem;
 `;

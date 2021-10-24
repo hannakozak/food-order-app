@@ -20,13 +20,15 @@ export const ItemWrapper = styled.li`
 
 
 export const ItemName = styled.h3`
-  font-size: 2rem;
+  font-size: 3rem;
+  margin: 1rem;
+  text-align: center;
 `;
 
 export const ItemPrice = styled.div`
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.darkOrange};
-  font-size: 1.5rem;
+  color: ${({ theme }) => theme.colors.lightOrange};
+  font-size: 2rem;
 `;
 
 export const ItemPhoto = styled.img`
