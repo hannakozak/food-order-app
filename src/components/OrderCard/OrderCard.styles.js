@@ -1,0 +1,27 @@
+import styled from 'styled-components';
+
+export const Button = styled.button`
+    cursor: pointer;
+    background-color: ${({ theme }) => theme.colors.lightOrange};;
+    border: 1px solid ${({ theme }) => theme.colors.lightOrange};;
+    color: white;
+    padding: 0.25rem 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 40%;
+    
+    &:hover{
+        background-color: ${({ theme }) => theme.colors.darkOrange};;
+        border: 1px solid ${({ theme }) => theme.colors.darkOrange};;
+    }
+    &:active{
+        background-color: ${({ theme }) => theme.colors.darkOrange};;
+        border: 1px solid ${({ theme }) => theme.colors.darkOrange};;
+    }
+
+    @media (min-width: 768px) {
+     width: 30%;
+     font-size: 2rem;
+    }
+`
