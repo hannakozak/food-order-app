@@ -1,7 +1,9 @@
 import React from 'react';
 import Input from '../../UI/Input';
 
-import { FormWrapper, FormButton } from './MenuForm.styles';
+import { Button } from '../../../styles/CommonStyles'
+import { FormWrapper } from './MenuForm.styles';
+
 
 const MenuForm = (props) => {
     return (
@@ -15,7 +17,7 @@ const MenuForm = (props) => {
           defaultValue: '1'
 
         }}/>
-        <FormButton>Add</FormButton>
+        <Button primary>Add</Button>
       </FormWrapper>
     )
 }

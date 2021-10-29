@@ -1,27 +1,28 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
-    cursor: pointer;
-    background-color: ${({ theme }) => theme.colors.lightOrange};;
-    border: 1px solid ${({ theme }) => theme.colors.lightOrange};;
-    color: white;
-    padding: 0.25rem 2rem;
-    border-radius: 10px;
+export const Wrapper = styled.li`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.darkOrange};
+    padding: 1rem 0;
+    margin: 1rem 0;
+`
+
+export const ItemPrice = styled.span`
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.lightOrange};
+`
+
+export const AmountWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
     font-weight: bold;
     font-size: 1.5rem;
-    width: 40%;
-    
-    &:hover{
-        background-color: ${({ theme }) => theme.colors.darkOrange};;
-        border: 1px solid ${({ theme }) => theme.colors.darkOrange};;
-    }
-    &:active{
-        background-color: ${({ theme }) => theme.colors.darkOrange};;
-        border: 1px solid ${({ theme }) => theme.colors.darkOrange};;
-    }
+    padding: 2rem;
+`
 
-    @media (min-width: 768px) {
-     width: 30%;
-     font-size: 2rem;
-    }
+export const ActionButtons = styled.div`
+    display: flex;
+    justify-content: flex-end;
 `

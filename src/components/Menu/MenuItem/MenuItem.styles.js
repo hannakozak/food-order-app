@@ -20,7 +20,7 @@ export const ItemWrapper = styled.li`
 
 
 export const ItemName = styled.h3`
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 1rem;
   text-align: center;
 `;
@@ -28,7 +28,7 @@ export const ItemName = styled.h3`
 export const ItemPrice = styled.div`
   font-weight: bold;
   color: ${({ theme }) => theme.colors.lightOrange};
-  font-size: 2rem;
+  font-size: 1.5rem;
 `;
 
 export const ItemPhoto = styled.img`

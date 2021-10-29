@@ -8,8 +8,3 @@ export const HeaderWrapper = styled.header`
   color: ${({ theme }) => theme.colors.darkGray};
   padding: 2rem;
 `;
-
-export const HeaderPrimary = styled.h1`
-  margin: auto;
-  font-size: 3.6rem;
-`;

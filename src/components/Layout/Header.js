@@ -1,7 +1,8 @@
 import React from 'react';
 import Basket from './Basket';
 
-import { HeaderPrimary, HeaderWrapper } from './Header.styles';
+import { HeaderWrapper } from './Header.styles';
+import { HeaderPrimary } from '../../styles/CommonStyles';
 
 const Header = () => {
     return (
