@@ -10,7 +10,7 @@ const MenuItem = (props) => {
         <ItemWrapper>
             <HeaderSecondary>{props.name}</HeaderSecondary>
             <ItemPhoto src={props.image} alt={props.name} />
-            <ItemPrice>{props.price}</ItemPrice>
+            <ItemPrice>${props.price}</ItemPrice>
             <MenuForm />
         </ItemWrapper>
     )

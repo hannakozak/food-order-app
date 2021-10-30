@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import MenuList from './components/Menu/MenuList/MenuList';
 import Header from './components/Layout/Header';
@@ -9,11 +9,21 @@ import { theme } from './styles/Theme';
 import { GlobalStyle } from './styles/globalStyles';
 
 const App = () => {
+  const [openBasket, setOpenBasket] = useState(false);
+
+  const openBasketHandler = () => {
+    setOpenBasket(true);
+  }
+
+  const closeBasketHandler = () => {
+    setOpenBasket(false);
+  }
+
   return (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <OrderCard />
-        <Header />
+        {openBasket && <OrderCard onCloseBasket={closeBasketHandler}/>}
+        <Header onOpenBasket={openBasketHandler}/>
         <MenuList />
     </ThemeProvider>
   )

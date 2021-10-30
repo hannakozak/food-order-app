@@ -3,9 +3,9 @@ import React from 'react';
 import BasketIcon from './BasketIcon';
 import { Icon, BusketWrapper, BusketItems } from './Basket.styles';
 
-const Basket = () => {
+const Basket = (props) => {
     return (
-        <BusketWrapper>
+        <BusketWrapper onClick={props.onOpenBasket}>
             <Icon>
                 <BasketIcon />
             </Icon>

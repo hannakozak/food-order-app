@@ -21,14 +21,14 @@ const OrderCard = (props) => {
         }
     </ul>
     return (
-        <Modal>
+        <Modal onCloseBasket={props.onCloseBasket}>
             {orderItems}
             <AmountWrapper>
                 <div>Total Amount</div>
                 <div>$35</div>
             </AmountWrapper>
             <ActionButtons>
-                <Button>Close</Button>
+                <Button onClick={props.onCloseBasket}>Close</Button>
                 <Button primary>Order</Button>
             </ActionButtons>
         </Modal>

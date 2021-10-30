@@ -7,11 +7,14 @@ export const Icon = styled.span`
 
 export const BusketWrapper = styled.button`
     display: flex;
+    justify-content: flex-start;
     background-color: transparent;
     border: none;
+    width: 4rem;
 `;
 
 export const BusketItems = styled.span`
     color: ${({ theme }) => theme.colors.lightOrange};
-    font-size: 2rem;
-`;
+    font-size: 1.6rem;
+    align-self: flex-end;
+`

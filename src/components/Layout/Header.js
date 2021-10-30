@@ -4,11 +4,11 @@ import Basket from './Basket';
 import { HeaderWrapper } from './Header.styles';
 import { HeaderPrimary } from '../../styles/CommonStyles';
 
-const Header = () => {
+const Header = (props) => {
     return (
           <HeaderWrapper>
             <HeaderPrimary>Our Menu</HeaderPrimary>
-            <Basket />
+            <Basket onOpenBasket={props.onOpenBasket} />
           </HeaderWrapper>
     )
 }
