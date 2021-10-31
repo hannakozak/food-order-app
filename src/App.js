@@ -7,6 +7,7 @@ import OrderCard from './components/OrderCard/OrderCard';
 import { ThemeProvider } from "styled-components";
 import { theme } from './styles/Theme';
 import { GlobalStyle } from './styles/globalStyles';
+import BasketProvider from './context/BasketProvider';
 
 const App = () => {
   const [openBasket, setOpenBasket] = useState(false);
@@ -20,12 +21,14 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
+    <BasketProvider>
+       <ThemeProvider theme={theme}>
         <GlobalStyle />
         {openBasket && <OrderCard onCloseBasket={closeBasketHandler}/>}
         <Header onOpenBasket={openBasketHandler}/>
         <MenuList />
-    </ThemeProvider>
+       </ThemeProvider>
+    </BasketProvider>
   )
 }
 

@@ -5,7 +5,7 @@ export const Icon = styled.span`
     height: 2.5rem;
 `;
 
-export const BusketWrapper = styled.button`
+export const BasketWrapper = styled.button`
     display: flex;
     justify-content: flex-start;
     background-color: transparent;
@@ -13,7 +13,7 @@ export const BusketWrapper = styled.button`
     width: 4rem;
 `;
 
-export const BusketItems = styled.span`
+export const BasketItems = styled.span`
     color: ${({ theme }) => theme.colors.lightOrange};
     font-size: 1.6rem;
     align-self: flex-end;
