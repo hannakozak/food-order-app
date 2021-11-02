@@ -6,15 +6,16 @@ import { ListWrapper } from './MenuList.styles';
 
 
 const MenuList = () => {
+  const menuList = data.map((item) =>
+    <MenuItem 
+        key={item.id} 
+        id={item.id}
+        name={item.name} 
+        price={item.price}
+        image={item.image}
+    />
+  );
 
-  const menuList = data.map((item) => 
-  <MenuItem
-     id={item.id}
-     name={item.name}
-     price={item.price}
-     image={item.image}
-  />
-  )
   return (
     <section>
       <ListWrapper>

@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.li`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid ${({ theme }) => theme.colors.darkOrange};
-    padding: 1rem 0;
-    margin: 1rem 0;
+
+
+export const Wrapper = styled.ul`
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: scroll;
 `
 
 export const ItemPrice = styled.span`

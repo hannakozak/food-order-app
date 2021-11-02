@@ -1,35 +1,52 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import BasketContext from '../../context/basket-context';
 
 import OrderItem from './OrderItem';
 import Modal from '../UI/Modal';
 import { Button } from '../../styles/CommonStyles'
 
-import { AmountWrapper, ActionButtons } from './OrderCard.styles';
+import { AmountWrapper, ActionButtons, Wrapper } from './OrderCard.styles';
 
 const OrderCard = (props) => {
+    const basketCtx = useContext(BasketContext);
 
-    const orderItems = <ul>
+    const totalAmount = `$${basketCtx.totalAmount.toFixed(2)}`;
+
+    const hasItems = basketCtx.items.length > 0;
+
+    const orderItemRemoveHandler = (id) => {
+        basketCtx.removeItem(id);
+    }
+
+    const orderItemAddHandler = (item) => {
+        basketCtx.addItem({ ...item, amount: 1})
+    }
+
+    const orderItems = <Wrapper>
         {
-            [{id: 1, name: 'Sushi', amount: 2, price: 20}].map((item)=>
+            basketCtx.items.map((item)=>
                 <OrderItem 
                     key={item.id} 
                     name={item.name} 
                     amount={item.amount} 
                     price={item.price} 
+                    onRemove={orderItemRemoveHandler.bind(null, item.id)}
+                    onAdd={orderItemAddHandler.bind(null, item)}
                 />
             )
         }
-    </ul>
+    </Wrapper>
     return (
         <Modal onCloseBasket={props.onCloseBasket}>
             {orderItems}
             <AmountWrapper>
                 <div>Total Amount</div>
-                <div>$35</div>
+                <div>{totalAmount}</div>
             </AmountWrapper>
             <ActionButtons>
                 <Button onClick={props.onCloseBasket}>Close</Button>
-                <Button primary>Order</Button>
+                {hasItems && <Button primary>Order</Button>}
             </ActionButtons>
         </Modal>
     )
