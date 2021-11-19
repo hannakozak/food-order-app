@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/food-order-app/static/js/main.c943e3b7.chunk.js",
+    "main.js.map": "/food-order-app/static/js/main.c943e3b7.chunk.js.map",
+    "runtime-main.js": "/food-order-app/static/js/runtime-main.c6cf0819.js",
+    "runtime-main.js.map": "/food-order-app/static/js/runtime-main.c6cf0819.js.map",
+    "static/js/2.8aef3068.chunk.js": "/food-order-app/static/js/2.8aef3068.chunk.js",
+    "static/js/2.8aef3068.chunk.js.map": "/food-order-app/static/js/2.8aef3068.chunk.js.map",
+    "static/js/3.e9e882e8.chunk.js": "/food-order-app/static/js/3.e9e882e8.chunk.js",
+    "static/js/3.e9e882e8.chunk.js.map": "/food-order-app/static/js/3.e9e882e8.chunk.js.map",
+    "index.html": "/food-order-app/index.html",
+    "static/js/2.8aef3068.chunk.js.LICENSE.txt": "/food-order-app/static/js/2.8aef3068.chunk.js.LICENSE.txt",
+    "static/media/smoothie-almond.f355b33b.jpg": "/food-order-app/static/media/smoothie-almond.f355b33b.jpg",
+    "static/media/smoothie-healthy.3c562aa0.jpg": "/food-order-app/static/media/smoothie-healthy.3c562aa0.jpg",
+    "static/media/smoothie-strawberry.b42bc0d2.jpg": "/food-order-app/static/media/smoothie-strawberry.b42bc0d2.jpg",
+    "static/media/smoothie-workout.67f372d6.jpg": "/food-order-app/static/media/smoothie-workout.67f372d6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6cf0819.js",
+    "static/js/2.8aef3068.chunk.js",
+    "static/js/main.c943e3b7.chunk.js"
+  ]
+}
