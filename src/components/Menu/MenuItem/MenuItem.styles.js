@@ -6,7 +6,7 @@ export const ItemWrapper = styled.li`
   justify-content: space-around;
   align-items: center;
   margin: 1rem;
-  width: 75%;
+  width: 90%;
   line-height: 50px;
   color: ${({ theme }) => theme.colors.darkGray};
   padding: 2rem;
