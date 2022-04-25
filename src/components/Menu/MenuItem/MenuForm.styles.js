@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FormWrapper = styled.form`
   display: flex;
@@ -6,11 +6,8 @@ export const FormWrapper = styled.form`
   justify-content: center;
   align-items: center;
   width: 100%;
-`
+`;
 
 export const MenuInput = styled.input`
- font-size: 1.5rem;
-`
-
-
-
+  font-size: 1.2rem;
+`;

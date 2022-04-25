@@ -4,7 +4,6 @@ export const Wrapper = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 20rem;
 `;
 
 export const ItemPrice = styled.span`

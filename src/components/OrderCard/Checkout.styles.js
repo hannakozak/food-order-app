@@ -13,7 +13,7 @@ export const FormInput = styled.input`
   padding: 0.4rem;
   font-size: 1rem;
   border-radius: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 `;
 
 export const FormLabel = styled.label`
@@ -22,4 +22,10 @@ export const FormLabel = styled.label`
   font-weight: 600;
   margin-left: 4px;
   text-align: left;
+`;
+
+export const ErrorMessage = styled.p`
+  font-size: 1rem;
+  font-weight: 600;
+  color: ${({ theme }) => theme.colors.error};
 `;
