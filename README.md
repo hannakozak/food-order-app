@@ -1,6 +1,6 @@
-## Event Planner App
+## Food order app
 
-An event planner application built with React and Firebase
+A food order application built with React and the Firebase Realtime Database.
 
 ## Demo
 
